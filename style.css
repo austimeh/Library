@@ -1,0 +1,99 @@
+body{
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-image: url(images/bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar__header{
+  background: #A0522D;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.3rem solid goldenrod;
+}
+
+.navbar__logo{
+  height: 80px;
+  width: 80px;
+}
+
+h1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: beige;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+.navbar__btn{
+  align-self: center;
+  border: 5px solid #daa520;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: #daa520;
+  transition: all 2s ease;
+}
+
+.change .bar1{
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2{
+  opacity: 0;
+}
+.change .bar3{
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.navbar__links{
+  list-style-type: none;
+  transition: all 2s ease;
+  /* */
+  height: 0;
+  overflow: hidden;
+}
+
+.navbar__collapse{
+  height: 305px;
+}
+
+.navbar__single-link{
+  display: block;
+  background: #A0522D;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #f5f5dc;
+  transition: all 2s ease;
+  cursor: pointer;
+}
+
+.navbar__single-link:hover{
+  padding-left: 1.5rem;
+  background: #f5deb3;
+}
+
+footer{
+  text-align: center;
+  color: black;
+  background-color: beige;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+  width: 95%;
+}
